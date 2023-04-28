@@ -3,7 +3,6 @@ const { poolConnection } = require('../config/database')
 module.exports ={
     getTopTwenty: async (req,res) => {
         try {
-            //var poolConnection = await sql.connect(config);
     
             console.log("Reading rows from the Table...");
             const pool = await poolConnection
